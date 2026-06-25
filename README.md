@@ -79,7 +79,7 @@ DOMAIN,api.futunn.com
 IP-CIDR,119.28.37.0/24,no-resolve
 ```
 
-新增/删除规则后跑 `pnpm build` 即可。推到 GitHub 后，CI 也会每天自动重建并提交 `rule/`。
+新增/删除规则后跑 `pnpm build` 即可；推到 GitHub 后，CI 会自动重建并提交 `rule/`。
 
 ## 目录结构
 

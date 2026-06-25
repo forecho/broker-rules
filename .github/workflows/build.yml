@@ -8,8 +8,6 @@ on:
       - "Source/**"
       - "Build/**"
       - ".github/workflows/build.yml"
-  schedule:
-    - cron: "17 5 * * *" # 每天 05:17 UTC 自动重建
   workflow_dispatch:
 
 concurrency:
