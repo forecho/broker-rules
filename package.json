@@ -1,0 +1,27 @@
+{
+  "name": "broker-rules",
+  "version": "0.0.0",
+  "private": true,
+  "description": "券商分流规则集 (Surge / Clash / Loon / QuantumultX / Shadowrocket / Stash)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/forecho/broker-rules.git"
+  },
+  "type": "commonjs",
+  "scripts": {
+    "build": "SWC_NODE_IGNORE_DYNAMIC=true node -r @swc-node/register ./Build/index.ts",
+    "validate:alive": "node -r @swc-node/register ./Build/validate-domain-alive.ts"
+  },
+  "author": "forecho",
+  "license": "AGPL-3.0",
+  "dependencies": {
+    "picocolors": "^1.1.1"
+  },
+  "devDependencies": {
+    "@swc-node/register": "^1.10.10",
+    "@swc/core": "^1.13.3",
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2"
+  },
+  "packageManager": "pnpm@8.5.1"
+}

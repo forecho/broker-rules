@@ -1,0 +1,50 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - "Source/**"
+      - "Build/**"
+      - ".github/workflows/build.yml"
+  schedule:
+    - cron: "17 5 * * *" # 每天 05:17 UTC 自动重建
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    name: Build & Commit
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: ".node-version"
+          cache: "pnpm"
+
+      - run: pnpm install --frozen-lockfile
+
+      - run: pnpm build
+
+      - name: Commit generated rules
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add rule/ Broker.list
+          if git diff --cached --quiet; then
+            echo "规则无变化，跳过提交。"
+          else
+            git commit -m "chore: 自动重建券商规则 ($(date -u +'%Y-%m-%d %H:%M UTC'))"
+            git push
+          fi
