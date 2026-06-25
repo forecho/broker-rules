@@ -2,10 +2,10 @@
 # AUTHOR: forecho
 # REPO: https://github.com/forecho/broker-rules
 # UPDATED: 2026-06-25
-# HOST-SUFFIX: 70
+# HOST-SUFFIX: 76
 # HOST: 18
 # IP-CIDR: 63
-# TOTAL: 151
+# TOTAL: 157
 HOST-SUFFIX,9oju31.launches.appsflyersdk.com,Broker
 HOST-SUFFIX,sgqt0j.launches.appsflyersdk.com,Broker
 HOST-SUFFIX,shortconn.im.qcloud.com,Broker
@@ -45,6 +45,8 @@ HOST-SUFFIX,cdn.futustatic.com,Broker
 HOST-SUFFIX,api.moomoobull.com,Broker
 HOST-SUFFIX,moomooequity.com,Broker
 HOST-SUFFIX,moomootrustee.com,Broker
+HOST-SUFFIX,hstong.com,Broker
+HOST-SUFFIX,vbkr.com,Broker
 HOST-SUFFIX,lbctrl.com,Broker
 HOST-SUFFIX,lbkrs.com,Broker
 HOST-SUFFIX,wbrks.com,Broker
@@ -63,6 +65,9 @@ HOST-SUFFIX,schwab.com,Broker
 HOST-SUFFIX,schwab.com.cn,Broker
 HOST-SUFFIX,schwab.com.hk,Broker
 HOST-SUFFIX,schwab.co.uk,Broker
+HOST-SUFFIX,snowballsecurities.com,Broker
+HOST-SUFFIX,snowball-x.com,Broker
+HOST-SUFFIX,snowballfinance.com,Broker
 HOST-SUFFIX,itiger.com,Broker
 HOST-SUFFIX,itigerup.com,Broker
 HOST-SUFFIX,laohu8.com,Broker
@@ -76,6 +81,7 @@ HOST-SUFFIX,zhijianfengyi.com,Broker
 HOST-SUFFIX,tigerbrokers.com,Broker
 HOST-SUFFIX,tigerbrokers.net,Broker
 HOST-SUFFIX,tigerbrokers.nz,Broker
+HOST-SUFFIX,zr.hk,Broker
 HOST,cg.play-analytics.com,Broker
 HOST,cdn.futustatic.com,Broker
 HOST,qtcard.futunn.com,Broker

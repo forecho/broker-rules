@@ -2,10 +2,10 @@
 # AUTHOR: forecho
 # REPO: https://github.com/forecho/broker-rules
 # UPDATED: 2026-06-25
-# DOMAIN-SUFFIX: 70
+# DOMAIN-SUFFIX: 76
 # DOMAIN: 18
 # IP-CIDR: 63
-# TOTAL: 151
+# TOTAL: 157
 DOMAIN-SUFFIX,9oju31.launches.appsflyersdk.com
 DOMAIN-SUFFIX,sgqt0j.launches.appsflyersdk.com
 DOMAIN-SUFFIX,shortconn.im.qcloud.com
@@ -45,6 +45,8 @@ DOMAIN-SUFFIX,cdn.futustatic.com
 DOMAIN-SUFFIX,api.moomoobull.com
 DOMAIN-SUFFIX,moomooequity.com
 DOMAIN-SUFFIX,moomootrustee.com
+DOMAIN-SUFFIX,hstong.com
+DOMAIN-SUFFIX,vbkr.com
 DOMAIN-SUFFIX,lbctrl.com
 DOMAIN-SUFFIX,lbkrs.com
 DOMAIN-SUFFIX,wbrks.com
@@ -63,6 +65,9 @@ DOMAIN-SUFFIX,schwab.com
 DOMAIN-SUFFIX,schwab.com.cn
 DOMAIN-SUFFIX,schwab.com.hk
 DOMAIN-SUFFIX,schwab.co.uk
+DOMAIN-SUFFIX,snowballsecurities.com
+DOMAIN-SUFFIX,snowball-x.com
+DOMAIN-SUFFIX,snowballfinance.com
 DOMAIN-SUFFIX,itiger.com
 DOMAIN-SUFFIX,itigerup.com
 DOMAIN-SUFFIX,laohu8.com
@@ -76,6 +81,7 @@ DOMAIN-SUFFIX,zhijianfengyi.com
 DOMAIN-SUFFIX,tigerbrokers.com
 DOMAIN-SUFFIX,tigerbrokers.net
 DOMAIN-SUFFIX,tigerbrokers.nz
+DOMAIN-SUFFIX,zr.hk
 DOMAIN,cg.play-analytics.com
 DOMAIN,cdn.futustatic.com
 DOMAIN,qtcard.futunn.com
