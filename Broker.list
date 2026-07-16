@@ -1,11 +1,11 @@
 # NAME: Broker
 # AUTHOR: forecho
 # REPO: https://github.com/forecho/broker-rules
-# UPDATED: 2026-06-25
-# DOMAIN-SUFFIX: 76
+# UPDATED: 2026-07-16
+# DOMAIN-SUFFIX: 77
 # DOMAIN: 18
 # IP-CIDR: 63
-# TOTAL: 157
+# TOTAL: 158
 DOMAIN-SUFFIX,9oju31.launches.appsflyersdk.com
 DOMAIN-SUFFIX,sgqt0j.launches.appsflyersdk.com
 DOMAIN-SUFFIX,shortconn.im.qcloud.com
@@ -82,6 +82,7 @@ DOMAIN-SUFFIX,tigerbrokers.com
 DOMAIN-SUFFIX,tigerbrokers.net
 DOMAIN-SUFFIX,tigerbrokers.nz
 DOMAIN-SUFFIX,zr.hk
+DOMAIN-SUFFIX,zr66.com
 DOMAIN,cg.play-analytics.com
 DOMAIN,cdn.futustatic.com
 DOMAIN,qtcard.futunn.com

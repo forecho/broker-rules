@@ -1,11 +1,11 @@
 # NAME: Broker
 # AUTHOR: forecho
 # REPO: https://github.com/forecho/broker-rules
-# UPDATED: 2026-06-25
-# HOST-SUFFIX: 76
+# UPDATED: 2026-07-16
+# HOST-SUFFIX: 77
 # HOST: 18
 # IP-CIDR: 63
-# TOTAL: 157
+# TOTAL: 158
 HOST-SUFFIX,9oju31.launches.appsflyersdk.com,Broker
 HOST-SUFFIX,sgqt0j.launches.appsflyersdk.com,Broker
 HOST-SUFFIX,shortconn.im.qcloud.com,Broker
@@ -82,6 +82,7 @@ HOST-SUFFIX,tigerbrokers.com,Broker
 HOST-SUFFIX,tigerbrokers.net,Broker
 HOST-SUFFIX,tigerbrokers.nz,Broker
 HOST-SUFFIX,zr.hk,Broker
+HOST-SUFFIX,zr66.com,Broker
 HOST,cg.play-analytics.com,Broker
 HOST,cdn.futustatic.com,Broker
 HOST,qtcard.futunn.com,Broker
