@@ -1,11 +1,11 @@
 # NAME: Broker
 # AUTHOR: forecho
 # REPO: https://github.com/forecho/broker-rules
-# UPDATED: 2026-07-16
-# DOMAIN-SUFFIX: 77
-# DOMAIN: 18
+# UPDATED: 2026-07-21
+# DOMAIN-SUFFIX: 80
+# DOMAIN: 19
 # IP-CIDR: 63
-# TOTAL: 158
+# TOTAL: 162
 DOMAIN-SUFFIX,9oju31.launches.appsflyersdk.com
 DOMAIN-SUFFIX,sgqt0j.launches.appsflyersdk.com
 DOMAIN-SUFFIX,shortconn.im.qcloud.com
@@ -81,6 +81,9 @@ DOMAIN-SUFFIX,zhijianfengyi.com
 DOMAIN-SUFFIX,tigerbrokers.com
 DOMAIN-SUFFIX,tigerbrokers.net
 DOMAIN-SUFFIX,tigerbrokers.nz
+DOMAIN-SUFFIX,tradingview.com
+DOMAIN-SUFFIX,tradingview-widget.com
+DOMAIN-SUFFIX,tradingviewstore.com
 DOMAIN-SUFFIX,zr.hk
 DOMAIN-SUFFIX,zr66.com
 DOMAIN,cg.play-analytics.com
@@ -101,6 +104,7 @@ DOMAIN,openapi-trade.longbridge.com
 DOMAIN,openapi.longbridge.cn
 DOMAIN,openapi-quote.longbridge.cn
 DOMAIN,openapi-trade.longbridge.cn
+DOMAIN,tradingview-user-uploads.b-cdn.net
 IP-CIDR,119.28.37.0/24,no-resolve
 IP-CIDR,43.153.233.0/24,no-resolve
 IP-CIDR,124.156.233.0/24,no-resolve

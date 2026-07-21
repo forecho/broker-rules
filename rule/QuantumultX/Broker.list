@@ -1,11 +1,11 @@
 # NAME: Broker
 # AUTHOR: forecho
 # REPO: https://github.com/forecho/broker-rules
-# UPDATED: 2026-07-16
-# HOST-SUFFIX: 77
-# HOST: 18
+# UPDATED: 2026-07-21
+# HOST-SUFFIX: 80
+# HOST: 19
 # IP-CIDR: 63
-# TOTAL: 158
+# TOTAL: 162
 HOST-SUFFIX,9oju31.launches.appsflyersdk.com,Broker
 HOST-SUFFIX,sgqt0j.launches.appsflyersdk.com,Broker
 HOST-SUFFIX,shortconn.im.qcloud.com,Broker
@@ -81,6 +81,9 @@ HOST-SUFFIX,zhijianfengyi.com,Broker
 HOST-SUFFIX,tigerbrokers.com,Broker
 HOST-SUFFIX,tigerbrokers.net,Broker
 HOST-SUFFIX,tigerbrokers.nz,Broker
+HOST-SUFFIX,tradingview.com,Broker
+HOST-SUFFIX,tradingview-widget.com,Broker
+HOST-SUFFIX,tradingviewstore.com,Broker
 HOST-SUFFIX,zr.hk,Broker
 HOST-SUFFIX,zr66.com,Broker
 HOST,cg.play-analytics.com,Broker
@@ -101,6 +104,7 @@ HOST,openapi-trade.longbridge.com,Broker
 HOST,openapi.longbridge.cn,Broker
 HOST,openapi-quote.longbridge.cn,Broker
 HOST,openapi-trade.longbridge.cn,Broker
+HOST,tradingview-user-uploads.b-cdn.net,Broker
 IP-CIDR,119.28.37.0/24,Broker,no-resolve
 IP-CIDR,43.153.233.0/24,Broker,no-resolve
 IP-CIDR,124.156.233.0/24,Broker,no-resolve
