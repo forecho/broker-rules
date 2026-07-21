@@ -2,10 +2,10 @@
 # AUTHOR: forecho
 # REPO: https://github.com/forecho/broker-rules
 # UPDATED: 2026-07-21
-# DOMAIN-SUFFIX: 79
+# DOMAIN-SUFFIX: 80
 # DOMAIN: 19
 # IP-CIDR: 63
-# TOTAL: 161
+# TOTAL: 162
 payload:
   - DOMAIN-SUFFIX,9oju31.launches.appsflyersdk.com
   - DOMAIN-SUFFIX,sgqt0j.launches.appsflyersdk.com
@@ -86,6 +86,7 @@ payload:
   - DOMAIN-SUFFIX,tradingview-widget.com
   - DOMAIN-SUFFIX,tradingviewstore.com
   - DOMAIN-SUFFIX,zr.hk
+  - DOMAIN-SUFFIX,zr66.com
   - DOMAIN,cg.play-analytics.com
   - DOMAIN,cdn.futustatic.com
   - DOMAIN,qtcard.futunn.com

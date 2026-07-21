@@ -2,10 +2,10 @@
 # AUTHOR: forecho
 # REPO: https://github.com/forecho/broker-rules
 # UPDATED: 2026-07-21
-# HOST-SUFFIX: 79
+# HOST-SUFFIX: 80
 # HOST: 19
 # IP-CIDR: 63
-# TOTAL: 161
+# TOTAL: 162
 HOST-SUFFIX,9oju31.launches.appsflyersdk.com,Broker
 HOST-SUFFIX,sgqt0j.launches.appsflyersdk.com,Broker
 HOST-SUFFIX,shortconn.im.qcloud.com,Broker
@@ -85,6 +85,7 @@ HOST-SUFFIX,tradingview.com,Broker
 HOST-SUFFIX,tradingview-widget.com,Broker
 HOST-SUFFIX,tradingviewstore.com,Broker
 HOST-SUFFIX,zr.hk,Broker
+HOST-SUFFIX,zr66.com,Broker
 HOST,cg.play-analytics.com,Broker
 HOST,cdn.futustatic.com,Broker
 HOST,qtcard.futunn.com,Broker
