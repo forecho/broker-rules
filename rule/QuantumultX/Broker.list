@@ -1,14 +1,17 @@
 # NAME: Broker
 # AUTHOR: forecho
 # REPO: https://github.com/forecho/broker-rules
-# UPDATED: 2026-07-27
-# HOST-SUFFIX: 85
+# UPDATED: 2026-08-07
+# HOST-SUFFIX: 88
 # HOST: 19
 # IP-CIDR: 63
-# TOTAL: 167
+# TOTAL: 170
 HOST-SUFFIX,9oju31.launches.appsflyersdk.com,Broker
 HOST-SUFFIX,sgqt0j.launches.appsflyersdk.com,Broker
 HOST-SUFFIX,shortconn.im.qcloud.com,Broker
+HOST-SUFFIX,fotechwealth.com,Broker
+HOST-SUFFIX,mfosunhani.com,Broker
+HOST-SUFFIX,fosunwealth.com,Broker
 HOST-SUFFIX,futuhk.com,Broker
 HOST-SUFFIX,futu.link,Broker
 HOST-SUFFIX,futunn.com,Broker
