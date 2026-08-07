@@ -1,15 +1,18 @@
 # NAME: Broker
 # AUTHOR: forecho
 # REPO: https://github.com/forecho/broker-rules
-# UPDATED: 2026-07-27
-# DOMAIN-SUFFIX: 85
+# UPDATED: 2026-08-07
+# DOMAIN-SUFFIX: 88
 # DOMAIN: 19
 # IP-CIDR: 63
-# TOTAL: 167
+# TOTAL: 170
 payload:
   - DOMAIN-SUFFIX,9oju31.launches.appsflyersdk.com
   - DOMAIN-SUFFIX,sgqt0j.launches.appsflyersdk.com
   - DOMAIN-SUFFIX,shortconn.im.qcloud.com
+  - DOMAIN-SUFFIX,fotechwealth.com
+  - DOMAIN-SUFFIX,mfosunhani.com
+  - DOMAIN-SUFFIX,fosunwealth.com
   - DOMAIN-SUFFIX,futuhk.com
   - DOMAIN-SUFFIX,futu.link
   - DOMAIN-SUFFIX,futunn.com
