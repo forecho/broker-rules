@@ -1,11 +1,11 @@
 # NAME: Broker
 # AUTHOR: forecho
 # REPO: https://github.com/forecho/broker-rules
-# UPDATED: 2026-08-07
-# HOST-SUFFIX: 88
+# UPDATED: 2026-08-10
+# HOST-SUFFIX: 93
 # HOST: 19
 # IP-CIDR: 63
-# TOTAL: 170
+# TOTAL: 175
 HOST-SUFFIX,9oju31.launches.appsflyersdk.com,Broker
 HOST-SUFFIX,sgqt0j.launches.appsflyersdk.com,Broker
 HOST-SUFFIX,shortconn.im.qcloud.com,Broker
@@ -44,8 +44,13 @@ HOST-SUFFIX,futuau.com,Broker
 HOST-SUFFIX,futuhkapp.com,Broker
 HOST-SUFFIX,fututrade.com,Broker
 HOST-SUFFIX,fututrustee.com,Broker
+HOST-SUFFIX,futuoa.com,Broker
+HOST-SUFFIX,futubos.com,Broker
+HOST-SUFFIX,futusg.com,Broker
+HOST-SUFFIX,futuie.com,Broker
+HOST-SUFFIX,futuhainan.com,Broker
 HOST-SUFFIX,cdn.futustatic.com,Broker
-HOST-SUFFIX,api.moomoobull.com,Broker
+HOST-SUFFIX,moomoobull.com,Broker
 HOST-SUFFIX,moomooequity.com,Broker
 HOST-SUFFIX,moomootrustee.com,Broker
 HOST-SUFFIX,hstong.com,Broker

@@ -1,11 +1,11 @@
 # NAME: Broker
 # AUTHOR: forecho
 # REPO: https://github.com/forecho/broker-rules
-# UPDATED: 2026-08-07
-# DOMAIN-SUFFIX: 88
+# UPDATED: 2026-08-10
+# DOMAIN-SUFFIX: 93
 # DOMAIN: 19
 # IP-CIDR: 63
-# TOTAL: 170
+# TOTAL: 175
 payload:
   - DOMAIN-SUFFIX,9oju31.launches.appsflyersdk.com
   - DOMAIN-SUFFIX,sgqt0j.launches.appsflyersdk.com
@@ -45,8 +45,13 @@ payload:
   - DOMAIN-SUFFIX,futuhkapp.com
   - DOMAIN-SUFFIX,fututrade.com
   - DOMAIN-SUFFIX,fututrustee.com
+  - DOMAIN-SUFFIX,futuoa.com
+  - DOMAIN-SUFFIX,futubos.com
+  - DOMAIN-SUFFIX,futusg.com
+  - DOMAIN-SUFFIX,futuie.com
+  - DOMAIN-SUFFIX,futuhainan.com
   - DOMAIN-SUFFIX,cdn.futustatic.com
-  - DOMAIN-SUFFIX,api.moomoobull.com
+  - DOMAIN-SUFFIX,moomoobull.com
   - DOMAIN-SUFFIX,moomooequity.com
   - DOMAIN-SUFFIX,moomootrustee.com
   - DOMAIN-SUFFIX,hstong.com
