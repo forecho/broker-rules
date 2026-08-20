@@ -1,11 +1,11 @@
 # NAME: Broker
 # AUTHOR: forecho
 # REPO: https://github.com/forecho/broker-rules
-# UPDATED: 2026-08-10
-# DOMAIN-SUFFIX: 93
+# UPDATED: 2026-08-20
+# DOMAIN-SUFFIX: 94
 # DOMAIN: 19
 # IP-CIDR: 63
-# TOTAL: 175
+# TOTAL: 176
 payload:
   - DOMAIN-SUFFIX,9oju31.launches.appsflyersdk.com
   - DOMAIN-SUFFIX,sgqt0j.launches.appsflyersdk.com
@@ -90,6 +90,7 @@ payload:
   - DOMAIN-SUFFIX,tigerbrokers.com
   - DOMAIN-SUFFIX,tigerbrokers.net
   - DOMAIN-SUFFIX,tigerbrokers.nz
+  - DOMAIN-SUFFIX,skytigris.cn
   - DOMAIN-SUFFIX,topstep.com
   - DOMAIN-SUFFIX,topstepx.com
   - DOMAIN-SUFFIX,topsteptrader.com
