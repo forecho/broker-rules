@@ -111,7 +111,7 @@ export class RuleOutput {
   }
 
   /** 把数据灌进一个策略，返回该策略序列化后的完整文件内容 */
-  private renderWith(strategy: BaseWriteStrategy): string[] {
+  private renderWith(strategy: BaseWriteStrategy, meta = this.meta()): string[] {
     for (const suffix of this.domainSuffixes) {
       strategy.writeDomainSuffix(suffix);
     }
@@ -121,14 +121,14 @@ export class RuleOutput {
     for (const [cidr, noResolve] of this.ipcidrs) {
       strategy.writeIpCidr(cidr, noResolve);
     }
-    return strategy.serialize(this.meta());
+    return strategy.serialize(meta);
   }
 
   /** 用全部策略输出文件。每个策略实例对应一个文件。 */
-  writeAll(strategies: BaseWriteStrategy[], rootDir: string): void {
+  writeAll(strategies: BaseWriteStrategy[], rootDir: string, meta = this.meta()): void {
     for (let i = 0; i < strategies.length; i++) {
       const strategy = strategies[i];
-      const lines = this.renderWith(strategy);
+      const lines = this.renderWith(strategy, meta);
       compareAndWriteFile(lines, path.join(rootDir, strategy.outputPath));
     }
   }

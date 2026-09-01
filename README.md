@@ -20,6 +20,17 @@
 | Stash | `https://raw.githubusercontent.com/forecho/broker-rules/master/rule/Stash/Broker.yaml` |
 | QuantumultX | `https://raw.githubusercontent.com/forecho/broker-rules/master/rule/QuantumultX/Broker.list` |
 
+Topstep 规则单独提供，便于将其配置为直连：
+
+| 客户端 | 订阅链接（raw） |
+|--------|----------------|
+| Surge | `https://raw.githubusercontent.com/forecho/broker-rules/master/rule/Surge/Topstep.list` |
+| Loon | `https://raw.githubusercontent.com/forecho/broker-rules/master/rule/Loon/Topstep.list` |
+| Shadowrocket | `https://raw.githubusercontent.com/forecho/broker-rules/master/rule/Shadowrocket/Topstep.list` |
+| Clash / Mihomo | `https://raw.githubusercontent.com/forecho/broker-rules/master/rule/Clash/Topstep.yaml` |
+| Stash | `https://raw.githubusercontent.com/forecho/broker-rules/master/rule/Stash/Topstep.yaml` |
+| QuantumultX | `https://raw.githubusercontent.com/forecho/broker-rules/master/rule/QuantumultX/Topstep.list` |
+
 > jsDelivr 加速：把 `https://raw.githubusercontent.com/forecho/broker-rules/master/` 换成 `https://cdn.jsdelivr.net/gh/forecho/broker-rules@master/` 即可。
 
 ### Surge
@@ -54,6 +65,12 @@ rules:
 ```ini
 [filter_remote]
 https://raw.githubusercontent.com/forecho/broker-rules/master/rule/QuantumultX/Broker.list, tag=Broker, enabled=true
+```
+
+Topstep 使用同样的配置方式，将策略名改为你的直连策略组：
+
+```ini
+https://raw.githubusercontent.com/forecho/broker-rules/master/rule/QuantumultX/Topstep.list, tag=Topstep, enabled=true
 ```
 
 ### Loon / Shadowrocket / Stash
