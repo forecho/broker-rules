@@ -1,3 +1,5 @@
+
+
 # broker-rules
 
 券商分流规则集。把富途、长桥、老虎、嘉信等券商 App 的流量，分流到你指定的策略组（一般走直连或港美节点）。
@@ -83,7 +85,7 @@ https://raw.githubusercontent.com/forecho/broker-rules/master/rule/QuantumultX/T
 
 ```bash
 pnpm install
-pnpm build            # 读取 Source → 生成 rule/ 与根目录 Broker.list
+pnpm build            # 读取 Source → 生成 rule/ 与根目录 Broker.list、Topstep.list
 pnpm validate:alive   # （可选）DNS 解析检查源里的域名是否还存活，仅报告不改文件
 ```
 
