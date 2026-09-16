@@ -13,25 +13,25 @@
 
 | 客户端 | 订阅链接（raw） |
 |--------|----------------|
-| Surge | `https://raw.githubusercontent.com/forecho/broker-rules/master/rule/Surge/Broker.list` |
-| Loon | `https://raw.githubusercontent.com/forecho/broker-rules/master/rule/Loon/Broker.list` |
-| Shadowrocket | `https://raw.githubusercontent.com/forecho/broker-rules/master/rule/Shadowrocket/Broker.list` |
-| Clash / Mihomo | `https://raw.githubusercontent.com/forecho/broker-rules/master/rule/Clash/Broker.yaml` |
-| Stash | `https://raw.githubusercontent.com/forecho/broker-rules/master/rule/Stash/Broker.yaml` |
-| QuantumultX | `https://raw.githubusercontent.com/forecho/broker-rules/master/rule/QuantumultX/Broker.list` |
+| Surge | `https://raw.githubusercontent.com/forecho/broker-rules/main/rule/Surge/Broker.list` |
+| Loon | `https://raw.githubusercontent.com/forecho/broker-rules/main/rule/Loon/Broker.list` |
+| Shadowrocket | `https://raw.githubusercontent.com/forecho/broker-rules/main/rule/Shadowrocket/Broker.list` |
+| Clash / Mihomo | `https://raw.githubusercontent.com/forecho/broker-rules/main/rule/Clash/Broker.yaml` |
+| Stash | `https://raw.githubusercontent.com/forecho/broker-rules/main/rule/Stash/Broker.yaml` |
+| QuantumultX | `https://raw.githubusercontent.com/forecho/broker-rules/main/rule/QuantumultX/Broker.list` |
 
 Topstep 规则单独提供，便于将其配置为直连：
 
 | 客户端 | 订阅链接（raw） |
 |--------|----------------|
-| Surge | `https://raw.githubusercontent.com/forecho/broker-rules/master/rule/Surge/Topstep.list` |
-| Loon | `https://raw.githubusercontent.com/forecho/broker-rules/master/rule/Loon/Topstep.list` |
-| Shadowrocket | `https://raw.githubusercontent.com/forecho/broker-rules/master/rule/Shadowrocket/Topstep.list` |
-| Clash / Mihomo | `https://raw.githubusercontent.com/forecho/broker-rules/master/rule/Clash/Topstep.yaml` |
-| Stash | `https://raw.githubusercontent.com/forecho/broker-rules/master/rule/Stash/Topstep.yaml` |
-| QuantumultX | `https://raw.githubusercontent.com/forecho/broker-rules/master/rule/QuantumultX/Topstep.list` |
+| Surge | `https://raw.githubusercontent.com/forecho/broker-rules/main/rule/Surge/Topstep.list` |
+| Loon | `https://raw.githubusercontent.com/forecho/broker-rules/main/rule/Loon/Topstep.list` |
+| Shadowrocket | `https://raw.githubusercontent.com/forecho/broker-rules/main/rule/Shadowrocket/Topstep.list` |
+| Clash / Mihomo | `https://raw.githubusercontent.com/forecho/broker-rules/main/rule/Clash/Topstep.yaml` |
+| Stash | `https://raw.githubusercontent.com/forecho/broker-rules/main/rule/Stash/Topstep.yaml` |
+| QuantumultX | `https://raw.githubusercontent.com/forecho/broker-rules/main/rule/QuantumultX/Topstep.list` |
 
-> jsDelivr 加速：把 `https://raw.githubusercontent.com/forecho/broker-rules/master/` 换成 `https://cdn.jsdelivr.net/gh/forecho/broker-rules@master/` 即可。
+> jsDelivr 加速：把 `https://raw.githubusercontent.com/forecho/broker-rules/main/` 换成 `https://cdn.jsdelivr.net/gh/forecho/broker-rules@main/` 即可。
 
 ### Surge
 
@@ -39,7 +39,7 @@ Topstep 规则单独提供，便于将其配置为直连：
 
 ```ini
 [Rule]
-RULE-SET,https://raw.githubusercontent.com/forecho/broker-rules/master/rule/Surge/Broker.list,Broker
+RULE-SET,https://raw.githubusercontent.com/forecho/broker-rules/main/rule/Surge/Broker.list,Broker
 ```
 
 ### Clash / Mihomo
@@ -50,7 +50,7 @@ rule-providers:
     type: http
     behavior: classical
     format: yaml
-    url: "https://raw.githubusercontent.com/forecho/broker-rules/master/rule/Clash/Broker.yaml"
+    url: "https://raw.githubusercontent.com/forecho/broker-rules/main/rule/Clash/Broker.yaml"
     path: ./ruleset/Broker.yaml
     interval: 86400
 
@@ -64,13 +64,13 @@ rules:
 
 ```ini
 [filter_remote]
-https://raw.githubusercontent.com/forecho/broker-rules/master/rule/QuantumultX/Broker.list, tag=Broker, enabled=true
+https://raw.githubusercontent.com/forecho/broker-rules/main/rule/QuantumultX/Broker.list, tag=Broker, enabled=true
 ```
 
 Topstep 使用同样的配置方式，将策略名改为你的直连策略组：
 
 ```ini
-https://raw.githubusercontent.com/forecho/broker-rules/master/rule/QuantumultX/Topstep.list, tag=Topstep, enabled=true
+https://raw.githubusercontent.com/forecho/broker-rules/main/rule/QuantumultX/Topstep.list, tag=Topstep, enabled=true
 ```
 
 ### Loon / Shadowrocket / Stash
