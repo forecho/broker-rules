@@ -7,11 +7,14 @@
 
 ## 赞助
 
-感谢 [朵朵云加速](https://vip.dd8008.com/) 对本项目的赞助！
-
-朵朵云加速是一家主打**快速稳定**的机场，港美节点稳定，配合本规则集把券商流量固定到香港 / 新加坡，不用担心出口地区漂移。
-
-👉 [https://vip.dd8008.com/](https://vip.dd8008.com/)
+<table>
+<tbody>
+<tr>
+<td width="180"><a href="https://vip.dd8008.com/"><img src="./assets/duoduoyun.png" alt="朵朵云加速" width="150"></a></td>
+<td>感谢 <a href="https://vip.dd8008.com/">朵朵云加速</a> 对本项目的赞助！朵朵云加速是一家主打<b>快速稳定</b>的机场，港美节点稳定，配合本规则集把券商流量固定到香港 / 新加坡，不用担心出口地区漂移。 👉 <a href="https://vip.dd8008.com/">https://vip.dd8008.com/</a></td>
+</tr>
+</tbody>
+</table>
 
 ## 怎么用
 
