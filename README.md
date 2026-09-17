@@ -5,6 +5,14 @@
 
 > 规则内容初始来自 [Arthur-vx/broker-rules](https://github.com/Arthur-vx/broker-rules)，工程实现参考 [SukkaW/Surge](https://github.com/SukkaW/Surge)。
 
+## 赞助
+
+感谢 [朵朵云加速](https://vip.dd8008.com/) 对本项目的赞助！
+
+朵朵云加速是一家主打**快速稳定**的机场，港美节点稳定，配合本规则集把券商流量固定到香港 / 新加坡，不用担心出口地区漂移。
+
+👉 [https://vip.dd8008.com/](https://vip.dd8008.com/)
+
 ## 怎么用
 
 `rule/` 下的文件由脚本自动生成，直接订阅下面对应平台的链接即可。
