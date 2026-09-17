@@ -8,72 +8,74 @@ import { ClashYamlStrategy } from './lib/writing-strategy/clash';
 import { QuantumultXStrategy } from './lib/writing-strategy/quantumultx';
 
 const ROOT_DIR = path.resolve(__dirname, '..');
-const SOURCE_DIR = path.join(ROOT_DIR, 'Source', 'broker');
+const SOURCE_ROOT = path.join(ROOT_DIR, 'Source');
 
 const META = {
-  name: 'Broker',
   author: 'forecho',
   repo: 'https://github.com/forecho/broker-rules'
 };
 
-function readSources(files: string[], name = META.name): RuleOutput {
+function listSources(dir: string): string[] {
+  const files = fs
+    .readdirSync(dir)
+    .filter((f) => f.endsWith('.conf'))
+    .sort();
+
+  if (files.length === 0) {
+    throw new Error(`未在 ${dir} 找到任何 .conf 源文件`);
+  }
+
+  return files;
+}
+
+function readSources(dir: string, files: string[], name: string): RuleOutput {
   const ruleOutput = new RuleOutput({ name, author: META.author, repo: META.repo, date: new Date() });
 
   for (const file of files) {
-    const content = fs.readFileSync(path.join(SOURCE_DIR, file), 'utf-8');
-    ruleOutput.addSource(content);
-    console.log(picocolors.cyan(`[read]  Source/broker/${file}`));
+    const fullPath = path.join(dir, file);
+    ruleOutput.addSource(fs.readFileSync(fullPath, 'utf-8'));
+    console.log(picocolors.cyan(`[read]  ${path.relative(ROOT_DIR, fullPath)}`));
   }
 
   return ruleOutput;
 }
 
-function main(): void {
-  const files = fs
-    .readdirSync(SOURCE_DIR)
-    .filter((f) => f.endsWith('.conf'))
-    .sort();
+/** 每个规则集固定输出 7 个文件：六个平台目录 + 根目录 Surge 版 */
+function strategiesFor(name: string) {
+  return [
+    new SurgeListStrategy(`rule/Surge/${name}.list`, 'Surge'),
+    new SurgeListStrategy(`rule/Loon/${name}.list`, 'Loon'),
+    new SurgeListStrategy(`rule/Shadowrocket/${name}.list`, 'Shadowrocket'),
+    new SurgeListStrategy(`${name}.list`, 'Surge (root)'),
+    new ClashYamlStrategy(`rule/Clash/${name}.yaml`, 'Clash'),
+    new ClashYamlStrategy(`rule/Stash/${name}.yaml`, 'Stash'),
+    new QuantumultXStrategy(`rule/QuantumultX/${name}.list`, name)
+  ];
+}
 
-  if (files.length === 0) {
-    throw new Error(`未在 ${SOURCE_DIR} 找到任何 .conf 源文件`);
+function main(): void {
+  // Source/broker：券商，其中 topstep.conf 单独拆成 Topstep 规则集（便于配成直连）
+  const brokerDir = path.join(SOURCE_ROOT, 'broker');
+  const brokerFiles = listSources(brokerDir).filter((file) => file !== 'topstep.conf');
+  const brokerOutput = readSources(brokerDir, brokerFiles, 'Broker');
+  const topstepOutput = readSources(brokerDir, ['topstep.conf'], 'Topstep');
+
+  // Source/bank：银行，一般配成直连
+  const bankDir = path.join(SOURCE_ROOT, 'bank');
+  const bankOutput = readSources(bankDir, listSources(bankDir), 'Bank');
+
+  const outputs = [brokerOutput, topstepOutput, bankOutput];
+  const names = ['Broker', 'Topstep', 'Bank'];
+  let fileCount = 0;
+
+  for (let i = 0; i < outputs.length; i++) {
+    const strategies = strategiesFor(names[i]);
+    outputs[i].writeAll(strategies, ROOT_DIR);
+    fileCount += strategies.length;
   }
 
-  const brokerFiles = files.filter((file) => file !== 'topstep.conf');
-  const brokerOutput = readSources(brokerFiles);
-  const topstepOutput = readSources(['topstep.conf'], 'Topstep');
-
-  const brokerStrategies = [
-    new SurgeListStrategy('rule/Surge/Broker.list', 'Surge'),
-    new SurgeListStrategy('rule/Loon/Broker.list', 'Loon'),
-    new SurgeListStrategy('rule/Shadowrocket/Broker.list', 'Shadowrocket'),
-    new SurgeListStrategy('Broker.list', 'Surge (root)'),
-    new ClashYamlStrategy('rule/Clash/Broker.yaml', 'Clash'),
-    new ClashYamlStrategy('rule/Stash/Broker.yaml', 'Stash'),
-    new QuantumultXStrategy('rule/QuantumultX/Broker.list')
-  ];
-
-  const topstepStrategies = [
-    new SurgeListStrategy('rule/Surge/Topstep.list', 'Surge'),
-    new SurgeListStrategy('rule/Loon/Topstep.list', 'Loon'),
-    new SurgeListStrategy('rule/Shadowrocket/Topstep.list', 'Shadowrocket'),
-    new SurgeListStrategy('Topstep.list', 'Surge (root)'),
-    new ClashYamlStrategy('rule/Clash/Topstep.yaml', 'Clash'),
-    new ClashYamlStrategy('rule/Stash/Topstep.yaml', 'Stash'),
-    new QuantumultXStrategy('rule/QuantumultX/Topstep.list')
-  ];
-
-  brokerOutput.writeAll(brokerStrategies, ROOT_DIR);
-  topstepOutput.writeAll(topstepStrategies, ROOT_DIR);
-
-  console.log(
-    picocolors.bold(
-      picocolors.green(
-        `\n构建完成：Broker 共 ${brokerOutput.total} 条规则，Topstep 共 ${topstepOutput.total} 条规则，输出 ${
-          brokerStrategies.length + topstepStrategies.length
-        } 个文件。`
-      )
-    )
-  );
+  const summary = outputs.map((o, i) => `${names[i]} 共 ${o.total} 条规则`).join('，');
+  console.log(picocolors.bold(picocolors.green(`\n构建完成：${summary}，输出 ${fileCount} 个文件。`)));
 }
 
 main();

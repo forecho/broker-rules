@@ -1,0 +1,30 @@
+# NAME: Bank
+# AUTHOR: forecho
+# REPO: https://github.com/forecho/broker-rules
+# UPDATED: 2026-09-17
+# HOST-SUFFIX: 13
+# HOST: 9
+# IP-CIDR: 0
+# TOTAL: 22
+HOST-SUFFIX,elebank.com,Bank
+HOST-SUFFIX,appsflyersdk.com,Bank
+HOST-SUFFIX,hsbc.com.hk,Bank
+HOST-SUFFIX,tealiumiq.com,Bank
+HOST-SUFFIX,online-metrix.net,Bank
+HOST-SUFFIX,cloud1.vv1865.com,Bank
+HOST-SUFFIX,liveperson.net,Bank
+HOST-SUFFIX,lpsnmedia.net,Bank
+HOST-SUFFIX,wise.com,Bank
+HOST-SUFFIX,za.group,Bank
+HOST-SUFFIX,zainvest.group,Bank
+HOST-SUFFIX,zajourney.com,Bank
+HOST-SUFFIX,crashlytics.com,Bank
+HOST,cdnbc.wup.hsbc.com.hk,Bank
+HOST,hsbc.edge.sdk.awswaf.com,Bank
+HOST,c-hsbc.lytics.io,Bank
+HOST,mobile.eum-appdynamics.com,Bank
+HOST,tags.tiqcdn.com,Bank
+HOST,cdn.optimizely.com,Bank
+HOST,log-58144bf0.we-stats.com,Bank
+HOST,api.mixpanel.com,Bank
+HOST,app-measurement.com,Bank

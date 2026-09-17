@@ -1,13 +1,13 @@
 # NAME: Topstep
 # AUTHOR: forecho
 # REPO: https://github.com/forecho/broker-rules
-# UPDATED: 2026-09-01
+# UPDATED: 2026-09-17
 # HOST-SUFFIX: 5
 # HOST: 0
 # IP-CIDR: 0
 # TOTAL: 5
-HOST-SUFFIX,topstep.com,Broker
-HOST-SUFFIX,topstepx.com,Broker
-HOST-SUFFIX,topsteptrader.com,Broker
-HOST-SUFFIX,topstepfx.com,Broker
-HOST-SUFFIX,topstepbrokerage.com,Broker
+HOST-SUFFIX,topstep.com,Topstep
+HOST-SUFFIX,topstepx.com,Topstep
+HOST-SUFFIX,topsteptrader.com,Topstep
+HOST-SUFFIX,topstepfx.com,Topstep
+HOST-SUFFIX,topstepbrokerage.com,Topstep

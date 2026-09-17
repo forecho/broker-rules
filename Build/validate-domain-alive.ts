@@ -5,7 +5,7 @@ import picocolors from 'picocolors';
 import { isDomainAlive } from './lib/is-domain-alive';
 
 const ROOT_DIR = path.resolve(__dirname, '..');
-const SOURCE_DIR = path.join(ROOT_DIR, 'Source', 'broker');
+const SOURCE_ROOT = path.join(ROOT_DIR, 'Source');
 const CONCURRENCY = 16;
 
 /**
@@ -15,10 +15,13 @@ const CONCURRENCY = 16;
  */
 function collectDomains(): string[] {
   const domains = new Set<string>();
-  const files = fs.readdirSync(SOURCE_DIR).filter((f) => f.endsWith('.conf'));
+  const files = fs
+    .readdirSync(SOURCE_ROOT, { withFileTypes: true })
+    .filter((d) => d.isDirectory())
+    .flatMap((d) => fs.readdirSync(path.join(SOURCE_ROOT, d.name)).filter((f) => f.endsWith('.conf')).map((f) => path.join(d.name, f)));
 
   for (const file of files) {
-    const content = fs.readFileSync(path.join(SOURCE_DIR, file), 'utf-8');
+    const content = fs.readFileSync(path.join(SOURCE_ROOT, file), 'utf-8');
     for (const raw of content.split('\n')) {
       const line = raw.trim();
       if (line === '' || line.startsWith('#')) continue;
