@@ -1,11 +1,11 @@
 # NAME: Broker
 # AUTHOR: forecho
 # REPO: https://github.com/forecho/broker-rules
-# UPDATED: 2026-09-17
-# DOMAIN-SUFFIX: 89
-# DOMAIN: 19
+# UPDATED: 2026-09-22
+# DOMAIN-SUFFIX: 94
+# DOMAIN: 22
 # IP-CIDR: 63
-# TOTAL: 171
+# TOTAL: 179
 DOMAIN-SUFFIX,9oju31.launches.appsflyersdk.com
 DOMAIN-SUFFIX,sgqt0j.launches.appsflyersdk.com
 DOMAIN-SUFFIX,shortconn.im.qcloud.com
@@ -13,6 +13,8 @@ DOMAIN-SUFFIX,fotechwealth.com
 DOMAIN-SUFFIX,mfosunhani.com
 DOMAIN-SUFFIX,fosunwealth.com
 DOMAIN-SUFFIX,futuhk.com
+DOMAIN-SUFFIX,futuhk1.com
+DOMAIN-SUFFIX,futuhongkong.com
 DOMAIN-SUFFIX,futu.link
 DOMAIN-SUFFIX,futunn.com
 DOMAIN-SUFFIX,futuhn.com
@@ -35,9 +37,12 @@ DOMAIN-SUFFIX,futufin.com
 DOMAIN-SUFFIX,futuhk2.com
 DOMAIN-SUFFIX,futuholdings.com
 DOMAIN-SUFFIX,futuesop.com
+DOMAIN-SUFFIX,ftesop.com
 DOMAIN-SUFFIX,futubull.cn
 DOMAIN-SUFFIX,futuchain.com
 DOMAIN-SUFFIX,moomoo.com
+DOMAIN-SUFFIX,moomooapp.com
+DOMAIN-SUFFIX,moomoocn.com
 DOMAIN-SUFFIX,moomoo.com.hk
 DOMAIN-SUFFIX,futustatic.com
 DOMAIN-SUFFIX,futuau.com
@@ -95,6 +100,8 @@ DOMAIN-SUFFIX,tradingview-widget.com
 DOMAIN-SUFFIX,tradingviewstore.com
 DOMAIN-SUFFIX,zr.hk
 DOMAIN-SUFFIX,zr66.com
+DOMAIN,shortconnv6.im.qcloud.com
+DOMAIN,loginv6.im.qcloud.com
 DOMAIN,cg.play-analytics.com
 DOMAIN,cdn.futustatic.com
 DOMAIN,qtcard.futunn.com
@@ -105,6 +112,7 @@ DOMAIN,api5.futunn.com
 DOMAIN,trade.futunn.com
 DOMAIN,support.futunn.com
 DOMAIN,download.futunn.com
+DOMAIN,collect.us.moomoocrypto.com
 DOMAIN,quote.longbridge.global
 DOMAIN,trade.longportapp.com
 DOMAIN,openapi.longbridge.com

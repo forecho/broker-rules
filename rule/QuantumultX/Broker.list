@@ -1,11 +1,11 @@
 # NAME: Broker
 # AUTHOR: forecho
 # REPO: https://github.com/forecho/broker-rules
-# UPDATED: 2026-09-17
-# HOST-SUFFIX: 89
-# HOST: 19
+# UPDATED: 2026-09-22
+# HOST-SUFFIX: 94
+# HOST: 22
 # IP-CIDR: 63
-# TOTAL: 171
+# TOTAL: 179
 HOST-SUFFIX,9oju31.launches.appsflyersdk.com,Broker
 HOST-SUFFIX,sgqt0j.launches.appsflyersdk.com,Broker
 HOST-SUFFIX,shortconn.im.qcloud.com,Broker
@@ -13,6 +13,8 @@ HOST-SUFFIX,fotechwealth.com,Broker
 HOST-SUFFIX,mfosunhani.com,Broker
 HOST-SUFFIX,fosunwealth.com,Broker
 HOST-SUFFIX,futuhk.com,Broker
+HOST-SUFFIX,futuhk1.com,Broker
+HOST-SUFFIX,futuhongkong.com,Broker
 HOST-SUFFIX,futu.link,Broker
 HOST-SUFFIX,futunn.com,Broker
 HOST-SUFFIX,futuhn.com,Broker
@@ -35,9 +37,12 @@ HOST-SUFFIX,futufin.com,Broker
 HOST-SUFFIX,futuhk2.com,Broker
 HOST-SUFFIX,futuholdings.com,Broker
 HOST-SUFFIX,futuesop.com,Broker
+HOST-SUFFIX,ftesop.com,Broker
 HOST-SUFFIX,futubull.cn,Broker
 HOST-SUFFIX,futuchain.com,Broker
 HOST-SUFFIX,moomoo.com,Broker
+HOST-SUFFIX,moomooapp.com,Broker
+HOST-SUFFIX,moomoocn.com,Broker
 HOST-SUFFIX,moomoo.com.hk,Broker
 HOST-SUFFIX,futustatic.com,Broker
 HOST-SUFFIX,futuau.com,Broker
@@ -95,6 +100,8 @@ HOST-SUFFIX,tradingview-widget.com,Broker
 HOST-SUFFIX,tradingviewstore.com,Broker
 HOST-SUFFIX,zr.hk,Broker
 HOST-SUFFIX,zr66.com,Broker
+HOST,shortconnv6.im.qcloud.com,Broker
+HOST,loginv6.im.qcloud.com,Broker
 HOST,cg.play-analytics.com,Broker
 HOST,cdn.futustatic.com,Broker
 HOST,qtcard.futunn.com,Broker
@@ -105,6 +112,7 @@ HOST,api5.futunn.com,Broker
 HOST,trade.futunn.com,Broker
 HOST,support.futunn.com,Broker
 HOST,download.futunn.com,Broker
+HOST,collect.us.moomoocrypto.com,Broker
 HOST,quote.longbridge.global,Broker
 HOST,trade.longportapp.com,Broker
 HOST,openapi.longbridge.com,Broker
